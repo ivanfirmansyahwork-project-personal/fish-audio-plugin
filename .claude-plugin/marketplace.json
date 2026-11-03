@@ -1,0 +1,22 @@
+{
+  "name": "fish-audio-marketplace",
+  "owner": { "name": "ivan" },
+  "metadata": {
+    "description": "Fish Audio plugin for Claude: voices, text-to-speech, voice cloning, transcription, and Story Studio."
+  },
+  "plugins": [
+    {
+      "name": "fish-audio",
+      "source": "./plugins/fish-audio",
+      "description": "Connect Claude to Fish Audio: voices, text-to-speech, voice cloning, transcription, and Story Studio.",
+      "version": "0.1.0",
+      "strict": false,
+      "mcpServers": {
+        "fish-audio": {
+          "type": "http",
+          "url": "https://api.fish.audio/mcp"
+        }
+      }
+    }
+  ]
+}
